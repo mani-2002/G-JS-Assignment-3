@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADIOUS JS ASSIGNMENT - 3</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <img src="./images/stopwatch.png" class="img">
+        </div>
+        <div class="top1">
+            Stopwatch
+        </div>
+        <div class="linkdiv">
+            <a href="#" class="links">Home</a>
+            <a href="#" class="links">Timer</a>
+            <a href="#" class="links">Clock</a>
+            <a href="#" class="links">Calendar</a>
+        </div>
+    </div><br>
+    <div class="ins">Click here for instructions</div>
+    <div class="div0">
+        <div class="div5">
+            <div class="div1">
+                <div class="divs"><input type="text" name="days" maxlength="2" placeholder="00" class="input"
+                        id="dayss" />
+                    <div class="labelhour">Days</div>
+                </div>
+            </div>
+            <span class="colon">:</span>
+            <div class="div1">
+                <div class="divs"><input type="text" name="hours" maxlength="2" placeholder="00" class="input"
+                        id="hourss" oninput="validateHour(this)" />
+                    <div class="labelhour">Hours</div>
+                </div>
+            </div>
+            <span class="colon">:</span>
+            <div class="div1">
+                <div class="divs"><input type="text" name="minutes" maxlength="2" placeholder="00" class="input"
+                        id="minutess" oninput="validateInput(this)" />
+                    <div class="labelhour">Minutes</div>
+                </div>
+            </div>
+            <span class="colon">:</span>
+            <div class="div1">
+                <div class="divs">
+                    <input type="text" name="seconds" maxlength="2" placeholder="00" class="input" id="secondss"
+                        oninput="validateInput(this)" />
+                    <div class="labelhour">Seconds</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="btndiv"><button class="btn2" onclick="startTimer()">Start/Resume</button><button class="btn3"
+                id="pauseButton">Pause</button><button class="btn4" id="resetButton">Reset</button></div><br>
+    </div><br>
+    <div class="bottom">
+        <span class="span2">Instructions</span><br>
+        1. Enter the values in the input. <br>
+        2. Press the Start/Resume Button to start the timer.<br>
+        3. Pause the Timer if you want to pause.<br>
+        4. Press Start/Resume button to resume the timer.<br>
+        5. Press the Reset Button to reset the values.
+    </div>
+    <div class="self">- Created by Manikanta</div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
